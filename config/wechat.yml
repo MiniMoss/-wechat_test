@@ -1,7 +1,7 @@
 default: &default
-  corpid: "corpid"
-  corpsecret: "corpsecret"
-  agentid:  1
+  # corpid: "corpid"
+  # corpsecret: "corpsecret"
+  # agentid:  1
 # Or if using public account, only need above two line
   appid:  "wx7f2b2e6e50efb785"
   secret: "d4624c36b6795d1d99dcf0547af5443d"
@@ -10,6 +10,11 @@ default: &default
   encrypt_mode: false # if true must fill encoding_aes_key
   encoding_aes_key:  "my_encoding_aes_key"
   # jsapi_ticket: "C:/Users/[user_name]/wechat_jsapi_ticket"
+
+  # 避免在使用localtunnel测试功能时出现 
+  # Filter chain halted as :verify_signature rendered or redirected 
+  # 错误
+  skip_verify_ssl: true
 
 production:
   corpid:     <%= ENV['WECHAT_CORPID'] %>

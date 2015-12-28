@@ -64,6 +64,9 @@ gem 'rails-rename', '~> 1.0.0'
 # localtunnel支持
 gem 'localtunnel'
 
+# wechat 公众平台支持
+gem 'wechat'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resource :wechat, only: [:show, :create]
   root 'welcomes#index'
 
   # User's routes

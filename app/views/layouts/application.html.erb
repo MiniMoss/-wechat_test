@@ -104,7 +104,38 @@
             </li>
             <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
             <li class="heading">
+              <h3 class="uppercase">店铺管理</h3>
+            </li>
+            <li>
+              <%= link_to '#' do %>
+                <i class="fa fa-truck"></i>
+                <span class="title">货物管理</span>
+                <span class="arrow "></span>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to '#' do %>
+                <i class="fa fa-shopping-cart"></i>
+                <span class="title">订单管理</span>
+                <span class="arrow "></span>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to '#' do %>
+                <i class="fa fa-user"></i>
+                <span class="title">顾客信息管理</span>
+                <span class="arrow "></span>
+              <% end %>
+            </li>
+            <li class="heading">
               <h3 class="uppercase">设置</h3>
+            </li>
+            <li>
+              <%= link_to '#' do %>
+                <i class="fa fa-list-ul"></i>
+                <span class="title">自定义菜单</span>
+                <span class="arrow "></span>
+              <% end %>
             </li>
             <li>
               <%= link_to users_path do %>
